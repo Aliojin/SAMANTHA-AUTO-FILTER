@@ -13,7 +13,7 @@ from utils import get_size, is_subscribed, temp
 
 logger = logging.getLogger(__name__)
 
-@Client.on_message(filters.command("start"))
+@Client.on_message(filters.command("run"))
 async def start(client, message):
     if message.chat.type in ['group', 'supergroup']:
         buttons = [
